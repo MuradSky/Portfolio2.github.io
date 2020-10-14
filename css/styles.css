@@ -826,7 +826,8 @@ a {
           flex-wrap: wrap; }
   .products__item {
     width: 30.6%;
-    margin: 0px 0 73px; }
+    margin: 0px 0 73px; 
+    cursor: pointer; }
     .products__item_last {
       position: relative;
       display: -webkit-box;
@@ -1454,7 +1455,7 @@ a {
       position: relative;
       width: 184px;
       height: 184px;
-      background: chocolate; }
+      cursor: pointer }
     .socials__grid-icon {
       position: absolute;
       top: 10px;
