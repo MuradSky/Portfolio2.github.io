@@ -1,0 +1,17 @@
+include ./promotion_gallery
+mixin promotions
+    section.promotions
+        .container
+            h1.promotions__title Акции Акции
+            .promotions__grid
+                .promotions__item1
+                    h2.promotions__item1-titile Скидка 40% на все модели месяца
+                    P.promotions__item1-text Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.
+                    a.promotions__item1-link(href="/") Получить скидку
+                .promotions__item2
+                    h4.promotions__item2-title Заголовок акции
+                .promotions__item3
+                    h2.promotions__item3-title Дарим 150 000 ₽ на новую кухню
+                    p.promotions__item3-text Акции и спецпредложения для ещё более выгодной покупки кухни вашей мечты. А ещё мы бесплатно предлагаем дизайн-проект.
+                    a(href="/").promotions__item3-link перейти
+    +promotion_gallery

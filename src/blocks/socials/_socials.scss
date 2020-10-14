@@ -1,0 +1,89 @@
+.socials{
+    position: relative;
+    padding: 88px 0;
+    &__line{
+        width: 100%;
+        height: 3px;
+        background:#ECECEC;
+        margin: 0 0 80px;
+    }
+    &__inner{
+        display: flex;
+    }
+    &__item{
+        width: 40%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__rect{
+        width: 50%;
+        height: 714px;
+        background: #131313;
+    }
+    &__grid{
+        position: absolute;
+        top: 9%;
+        left: 12.5%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 17px;
+        &-item{
+            position: relative;
+            width: 184px;
+            height: 184px;
+            background: chocolate;
+        }
+        &-icon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+
+    &__title{
+        font-family: "Cormorant Garamond";
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 117.3%;
+
+        letter-spacing: -0.025em;
+        color: #141414;
+        margin: 0 0 190px;
+        padding: 70px 0 0 42px;
+    }
+    &__text{
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+
+        letter-spacing: 0.035em;
+
+        color: #666666;
+        padding: 0 163px 0 42px;
+        margin: 0 0 50px;
+    }
+}
+.social{
+    &__icons{
+        padding: 0 0 0 45px;
+        &-title{
+            font-family: "Open Sans";            
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+
+            letter-spacing: 0.135em;
+            text-transform: uppercase;
+
+            color: #424242;
+            margin: 0 0 30px;
+        }
+        &-link:not(:last-child){
+            margin: 0 10px 0 0;
+        }
+    }
+}

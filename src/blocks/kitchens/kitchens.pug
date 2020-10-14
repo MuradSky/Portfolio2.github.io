@@ -1,0 +1,14 @@
+include ./products
+mixin kitchens
+    section.kitchens
+        .container
+            h2.kitchens__title Кухни
+            .kitchens__tabs
+                a(href="/").kitchens__tabs-link Кухни со скидкой
+                a(href="/").kitchens__tabs-link Прямые
+                a(href="/").kitchens__tabs-link С островом
+                a(href="/").kitchens__tabs-link Белые
+                a(href="/").kitchens__tabs-link Красные
+                a(href="/").kitchens__tabs-link Из массива
+                a(href="/").kitchens__tabs-link Из дерева
+            +products

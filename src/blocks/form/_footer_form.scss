@@ -1,0 +1,116 @@
+.footer-form{
+    background: #fff;
+    padding: 0 0 80px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item1{
+        position: relative;
+        width: 30%;
+        height: 650px;
+    }
+    &__img{
+        position: absolute;
+        top: -7.5%;
+        left: -39%;
+        width: 680px;
+        height: 650px;
+        object-fit: contain;
+    }
+    &__item2{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 50px 0 0 29px;
+    }
+    &__title{
+        font-family: "Cormorant Garamond";
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 117.3%;
+
+        letter-spacing: -0.025em;
+
+        color: #141414;
+        margin: 0 0 84px;
+        padding: 0 200px 0 0;
+    }
+    &__text{
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+
+        letter-spacing: 0.035em;
+
+        color: #666666;
+        padding: 0 0 0 6px;
+        margin: 0 0 100px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 18px;
+        width: 100%;
+        padding: 0 0 0 21px;
+
+    }
+    &__input{
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 118.49%;
+        letter-spacing: 0.035em;
+
+        color: #585858;
+        width: 30%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #9D9D9D;
+        padding: 21px;
+    }
+    &__button {
+        font-family: "Open Sans";        
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120.3%;
+
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        width: 26.5%;
+        text-align: center;
+        padding: 22px 0;
+        border: none;
+        background: #FF3D00;
+        transition: all .2s linear;
+        cursor: pointer;
+        &:hover{
+            background: #ce3000;
+        }
+    }
+    &__note{
+        align-self: flex-end;
+
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 118.49%;
+
+        text-align: center;
+        letter-spacing: 0.035em;
+
+        color: #585858;
+
+        width: 100%;
+        max-width: 285px;
+
+        &_span{
+            color: #FF3D00;
+        }
+    }
+}

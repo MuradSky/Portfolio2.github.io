@@ -1,0 +1,15 @@
+mixin footer_form
+    section.footer-form
+        .footer-form__inner.container
+            .footer-form__item1
+                img(src="./img/form/fr1.png", alt="Kitchen").footer-form__img
+            .footer-form__item2
+                h2.footer-form__title Приходите к нам,<br>поговорим о вашем проекте
+                p.footer-form__text Новые модели, выгодные акции и неожиданные дизайнерские<br> решения ежедневно в удобном <br>для вас формате. Подписывайтесь!
+                form.footer-form__form(action="/")
+                    input(type="text" name="name" placeholder="Ваше имя").footer-form__input
+                    input(type="tel" name="phone" placeholder="Ваш телефон").footer-form__input
+                    button(type="submit").footer-form__button Отправить
+                .footer-form__note Отправляя контакты, вы соглашаетесь с 
+                    span.footer-form__note_span политикой конфиденциальности
+                    

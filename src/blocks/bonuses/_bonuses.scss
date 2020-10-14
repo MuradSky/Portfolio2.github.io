@@ -1,0 +1,101 @@
+.bonuses{
+    padding: 112px 0 296px;
+    &__title{
+        font-family: "Cormorant Garamond";
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 117.3%;
+
+        letter-spacing: -0.025em;
+
+        color: #141414;
+        margin: 0 0 67px;
+    }
+    &__slider{
+        position: relative;
+        height: 360px;
+        &-inner{
+            position: absolute;
+            display: flex;
+        }
+        &-title{
+            font-family:" Cormorant Garamond";
+            font-weight: 300;
+            font-size: 60px;
+            line-height: 117.3%;
+
+            letter-spacing: -0.025em;
+
+            color: #131313;
+            margin: 0 0 60px;
+            &_first{
+                color: #fff;
+            }
+            &_span{
+                color: #FF3D00;
+            }
+        }
+        &-text{
+            position: relative;
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120.3%;
+
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+
+            color: #131313;
+            
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: -14px;
+                left: 0;
+                width: 20%;
+                height: 1px;
+                background: #131313;
+            }
+            &_first{
+                color: #fff;
+                &::before{
+                    background: #fff;
+                }
+            }
+        }
+        &-arrows{
+            position: absolute;
+            right: 0;
+            bottom: -135px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        &-ellipse{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__slide1{
+        background: url("../img/bonuses/bon1.png") no-repeat center;
+    }
+    &__slide2{
+        background: url("../img/bonuses/bon2.png") no-repeat center;
+    }
+    &__slide3{
+        background: url("../img/bonuses/bon3.png") no-repeat center;
+    }
+    &__item{
+        position: relative;
+        background-size: cover;
+        width: 628px;
+        height: 360px;
+        margin: 0 15px 0 0;
+        padding: 57px 50px 0 70px;
+        overflow: hidden;
+        
+    }
+    
+}

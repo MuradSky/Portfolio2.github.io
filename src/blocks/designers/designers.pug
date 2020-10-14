@@ -1,0 +1,13 @@
+include ./we_works/we_works
+include ./client_reviews/client_reviews
+mixin designers
+    section.designers
+        h1.designers__title 150 дизайнеров
+        p.designers__text 150 дизайнеров-архитекторов ежедневно создают пространства индивидуально под каждого клиента. Получите бесплатный дизайн-проект под ваши предпочтения.
+        a(href="/").designers__link Бесплатный дизайн-проект
+        .designers__img1
+            img(src="./img/deginers/des1.png", alt="Designers")
+        .designers__img2
+            img(src="./img/deginers/des2.png", alt="Designers")
+    +we_works
+    +client_reviews

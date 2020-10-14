@@ -1,0 +1,190 @@
+.articles{
+    padding: 100px 0 230px;
+    &__link{
+        display: inline-flex;
+        align-items: center;
+        padding: 0px 27px 0 9px;
+        background: #FF3D00;
+    }
+    &__title{
+        font-family:"Cormorant Garamond";
+        font-weight: 300;
+        font-size: 72px;
+
+        letter-spacing: -0.025em;
+
+        color: #FFFFFF;
+
+        margin: 0 20px 0 0;
+        &_cont{
+            font-family: "Cormorant Garamond";
+            font-weight: 300;
+            font-size: 72px;
+            line-height: 117.3%;
+
+            letter-spacing: -0.025em;
+            padding: 0 0 0 9px;
+            color: #141414;
+        }
+    }
+    &__slider{
+        width: 100%;
+        height: 682px;
+        position: relative;
+        margin: 118px 0 67px;
+        &-bottons{
+            position: absolute;
+            right: -20px;
+            bottom: -115px;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__container{
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 25px;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        width: 530px;
+        height: 329px;
+        background: #000;
+        &_first{
+            background: url("../img/articles/artc1.png") no-repeat center;
+            
+            width: 570px;
+            height: 680px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &_seco{
+            background: url("../img/articles/artc3.png") no-repeat center;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        &_third{
+            background: url("../img/articles/artc3.png") no-repeat center;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        &_four{
+            background: url("../img/articles/artc4.png") no-repeat center;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        &_five{
+            background: url("../img/articles/artc4.png") no-repeat center;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        &_six{
+            background: url("../img/articles/artc5.png") no-repeat center;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        &_seven{
+            background: url("../img/articles/artc4.png") no-repeat center;
+            grid-column-start: 4;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        &-stic{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #323232;
+            padding: 9px 50px;
+
+            background: #F5EEE4;
+            &_first{
+                padding: 9px 50px;
+            }
+        }
+
+        &-date{
+            position: absolute;
+            top: -18px;
+            right: -11%;
+            transform: rotate(-90deg);
+            transform-origin:  90px 70px;
+            transform-box: content-box;
+
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120.3%;
+
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+
+        &-text{
+            position: absolute;
+            left: 28px;
+            bottom: 24px;
+
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 125.8%;
+
+            letter-spacing: -0.025em;
+
+            color: #FFFFFF;
+            padding: 0 200px 0 0;
+            &_first{
+                left: 38px;
+                bottom: 75px;
+            }
+        }
+    }
+    &__bottom-link{
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120.3%;
+
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+
+        color: #131313;
+
+        border: 1px solid #131313;
+
+        padding: 23px 45px;
+        margin: 0 0 0 7px;
+    }
+}

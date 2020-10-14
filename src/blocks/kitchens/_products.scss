@@ -1,0 +1,259 @@
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item{
+        width: 30.6%;
+        margin: 0px 0 73px;
+        &_last{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 626px;
+            background: #FF3D00;
+
+            padding: 136px 0 0;
+            &-title{
+                font-family: "Cormorant Garamond";
+                font-weight: 300;
+                font-size: 72px;
+                line-height: 107.8%;
+
+                letter-spacing: -0.025em;
+                color: #FFFFFF;
+
+                margin: 0 0 15px;
+            }
+            &-text{
+                font-family: "Open Sans";
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 120.3%;
+
+                letter-spacing: 0.105em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+            &-link{
+                position: absolute;
+                bottom: 62px;
+
+                font-family: "Open Sans";
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 120.3%;
+
+                letter-spacing: 0.105em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+
+                transition: all .2s linear;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+            &-arrow{
+                margin: 0 0 0 10px;
+            }
+        }
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title{
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120.3%;
+
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+
+            color: #323232;
+
+            margin: 0 0 5px;
+        }
+        &-text{
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+
+            letter-spacing: 0.035em;
+
+            color: #323232;
+        }
+        &-numb {
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120.3%;
+            text-align: right;
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+            color: #323232;
+        }
+    }
+    &__card{
+        position: relative;
+        width: 100%;
+        height: 585px;
+        margin: 0 0 25px;
+        &:hover .products__card-link,
+        &:hover .products__card-button{
+            opacity: 1;
+            visibility: visible;
+        }
+        &-sale{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 200;
+
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FFF;
+
+            padding: 11px 30px;
+            background: #FF9900;
+        }
+        &-hit{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 200;
+
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FFF;
+
+            padding: 11px 36px;
+            background: #FF3D00;
+        }
+        &-new{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 200;
+
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #333;
+
+            padding: 11px 34px;
+            background: #F5EEE4;
+        }
+        &-popUp {
+            position: absolute;
+            top: -45px;
+            right: -125px;
+            z-index: 300;
+            transition: all .2s linear .5s;
+            visibility: hidden;
+        }
+        &-calc{
+            position: absolute;
+            top: 24px;
+            right: 20px;
+            padding: 10px;
+            border: 1px solid transparent;
+            transition: all .2s linear;
+            &:hover{
+                border: 1px solid #444;
+            }
+            &:hover .products__card-popUp{
+                visibility: visible;
+            }
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-link{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 87%;
+            background: rgba(255, 255, 255, .5);
+            transition: all .3s linear;
+
+            opacity: 0;
+            visibility: hidden;
+        }
+        &-content{
+            padding: 80px 36px 36px;
+            &-box{
+                width: 100%;
+                max-width: 200px;
+                margin: 0 0 47px;
+            }
+            &-title{
+                font-family: "Open Sans";
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 120.3%;
+
+                letter-spacing: 0.105em;
+                text-transform: uppercase;
+
+                color: #323232;
+                margin: 0 0 5px;
+            }
+            &-text{
+                font-family: "Open Sans";
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.035em;
+
+                color: #585858;
+            }
+        }
+        &-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+            width: 100%;
+            height: 13%;
+            background: #FF3D00;
+            transition: all .3s linear;
+
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120.3%;
+
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            opacity: 0;
+            visibility: hidden;
+            &:hover{
+                background: #dd3401;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+mixin nav
+    nav.nav
+        .nav__inner.container
+            ul.nav__list
+                li.nav__item.nav__item_first
+                    a(href="/").nav__link Москва
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="nav__item-arrow">
+                        <path d="M1 1L5 5L9 1"/>
+                    </svg>
+                    ul.nav__sublist
+                        li
+                        li
+                        li
+                li.nav__item
+                    a(href="/").nav__link О компании
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="nav__item-arrow">
+                        <path d="M1 1L5 5L9 1"/>
+                    </svg>
+                    ul.nav__sublist
+                        li
+                        li
+                        li
+                li.nav__item
+                    a(href="/").nav__link Акции
+                li.nav__item
+                    a(href="/").nav__link Контакты
+                li.nav__item
+                    a(href="/").nav__link Заказать замер
+                li.nav__item
+                    a(href="/").nav__link Адреса салонов
+            ul.nav__contacts
+                li.nav__contacts-item
+                    a(href="mailto:info@kuhnicity.ru").nav__contacts-link info@kuhnicity.ru
+                li.nav__contacts-item
+                    span.nav__contacts-span Заказать звонок
+                    a(href="tel:+7 (499) 135-43-78").nav__contacts-link +7 (499) 135-43-78

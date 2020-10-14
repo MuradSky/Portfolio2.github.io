@@ -1,0 +1,102 @@
+.we-works{
+    padding: 95px 0;
+    &__title{
+        font-family: "Cormorant Garamond";
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 117.3%;
+
+        letter-spacing: -0.025em;
+
+        color: #000000;
+
+        margin: 0 0 77px;
+    }
+    &__container{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        position: relative;
+        width: 25%;
+        height: 666px;
+        overflow: hidden;
+        background: #fff;
+        margin: 3px;
+
+        cursor: pointer;
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: all .3s linear;
+            &_first{
+                opacity: 1;
+            }
+        }
+        &:hover .we-works__item-img{
+            opacity: 1;
+        }
+        &:hover .we-works__content{
+            color: #FFFFFF;
+        }
+        &:hover .we-works__figure{
+            fill: #fff;
+        }
+    }
+    &__content{
+        position: sticky;
+        z-index: 1000;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 40px 0 0;
+        text-align: center;
+        color: #333;
+        transition: all .3s linear;
+        &_first{
+            max-width: 160px;
+        }
+        &-title{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            letter-spacing: 0.105em;
+            text-transform: uppercase;
+
+            
+            margin: 0 0 32px;
+            &-first{
+                color: #FFFFFF;
+            }
+        }
+        &-text{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.035em;
+
+            &-first{
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__figure{
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        bottom: 0;
+        transition: all .3s linear;
+        &_first{
+            left: -12%;
+            bottom: -5%;
+        }
+    }
+}

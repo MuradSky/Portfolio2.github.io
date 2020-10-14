@@ -1,0 +1,30 @@
+include ./header/header
+include ./intro/intro
+include ./promotions/promotions
+include ./kitchens/kitchens
+include ./designers/designers
+include ./socials/socials
+include ./articles/articles
+include ./director/director
+include ./bonuses/bonuses
+include ./form/footer_form
+include ./footer/footer
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+            meta(name="description" content="Test Task")
+            meta(http-equiv="X-UA-Compatible" content="IE=edge")
+            title Test Task
+            link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet")
+            link(href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet")
+            link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet")
+            link(rel="stylesheet" href="css/styles.css")
+    body.faded
+        block content
+        block scripts
+            script(src='js/main.js')
+            
+            

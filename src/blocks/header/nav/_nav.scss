@@ -1,0 +1,104 @@
+
+.nav{
+    padding: 10px 0;
+    background: rgba(240, 240, 240, 0.88);
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+        margin: 0 32px 0 0;
+        height: 100%;
+        &:last-child{
+            margin: 0;
+        }
+        &_first{
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: -16px;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #ff3d00;
+            }
+        }
+        &-arrow{
+            margin: -7px 0 0 8px;
+            stroke: #333;
+            transition: all .2s linear;
+        }
+        &:hover .nav__link{
+            color: #ff3d00;
+        }
+        &:hover .nav__item-arrow{
+            stroke: #ff3d00;
+        }
+    
+        &:hover .nav__sublist{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &__link{
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 157%;
+        letter-spacing: -0.02em;
+        color: #333333;
+        transition: all .2s linear;
+    }
+    &__sublist{
+        position: absolute;
+        top: 32px;
+        left: -50px;
+        width: 200px;
+        height: 200px;
+        background: rgba(240, 240, 240, 0.88);
+        border: 1px solid #fff;
+        transition: all .3s ease-in-out;
+        transform: scale(0);
+        opacity: 0;
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        &-item:not(:first-child){
+            margin: 0 0 0 94px;
+            
+        }
+        &-span{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 157%;
+
+            letter-spacing: -0.02em;
+
+            color: #333333;
+            margin: 0 30px 0 0;
+        }
+        &-link{
+            font-family: "Open Sans";
+            font-size: 14px;
+            line-height: 157%;
+            letter-spacing: -0.02em;
+            color: #333333;
+            transition: all .2s linear;
+            &:hover{
+                color: #ff3d00;
+            }
+        }
+    }
+
+}

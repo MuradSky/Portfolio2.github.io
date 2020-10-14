@@ -1,0 +1,56 @@
+.menu{
+    padding: 20px 0 30px;
+    background: #fff;
+    &__panel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__vector{
+        transform: translate(45px, 10px);
+    }
+}
+.catalog{
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        height: 22px;
+        border: none;
+        cursor: pointer;
+        transition: all .2s linear;
+        &:hover{
+            opacity: 0.7;
+        }
+        &-lines{
+            margin: 0 18px 0 0;
+        }
+        &-span{
+            // font-family: Averta CY;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #2B2B2B
+        }
+    }
+}
+.calc__button{
+    // font-family: Averta CY;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120.3%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #1B1B1B;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 4px 0;
+    border-bottom:1px solid rgba(21, 21, 21, 0.22);
+    transition: all .2s linear;
+    &:hover{
+        opacity: 0.7;
+    }
+}

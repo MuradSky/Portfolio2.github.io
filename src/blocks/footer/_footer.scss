@@ -1,0 +1,128 @@
+.footer{
+    padding: 65px 0 38px;
+    border-top: 3px solid #ECECEC;
+    &-lists{
+        display: flex;
+        padding: 0 0 25px;
+        &__item{
+            position: relative;
+            &_first{
+                padding: 0 137px 0 0;
+            }
+            &_second{
+                padding: 0 176px 0 0;
+            }
+            &_four{
+                padding: 0 130px 0 0;
+            }
+            &_last{
+                text-align: center;
+            }
+        }
+        &__title{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+
+            letter-spacing: 0.135em;
+            text-transform: uppercase;
+
+            color: #323232;
+            margin: 0 0 39px;
+            &_bottom{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        &__contacts{
+            position: absolute;
+            width: 250px;
+            left: -54px;
+            bottom: 21%;
+        }
+        &__tel{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+
+            letter-spacing: 0.135em;
+            text-transform: uppercase;
+
+            color: #252525;
+
+            display: block;
+            margin: 0 0 7px;
+        }
+        &__time{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 118.49%;
+
+            letter-spacing: 0.035em;
+
+            color: #A0A0A0;
+
+            margin: 0 0 48px;
+        }
+        &__social{
+            margin: 0px 0 0 50px;
+            &-icons:not(:last-child){
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+
+    &-copy{
+        background: #fff;
+        padding: 7px 0;
+        &__cont{
+            display: flex;
+        }
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__text{
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 42px;
+
+            letter-spacing: 0.035em;
+
+            color: #A0A0A0;
+            &:first-child{
+                margin: 0 118px 0 0;
+            }
+        }
+
+        &__pay{
+            display: flex;
+            align-items: center;
+            opacity: 0.5;
+            &-icon{
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}
+.list{
+    margin: 0 0 134px;
+    &_last{
+        text-align: center;
+    }
+    &__link{
+        font-family: "Open Sans";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 42px;
+
+        letter-spacing: 0.035em;
+
+        color: #6A6A6A;
+    }
+}
